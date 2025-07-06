@@ -1,0 +1,27 @@
+Difference Between PUT and POST in REST APIs
+POST
+Use: To create a new resource.
+
+ID: Server generates the ID.
+
+Effect: Adds a new entry every time.
+
+Example: POST /api/register --> Creates a new user.
+
+Status Code: 201 Created
+
+In My Project: Used in /api/register to add users to the database.
+
+PUT
+
+Use: To update an existing resource or create at a specific ID.
+
+ID: Client provides the ID.
+
+Effect: Replaces the data for that ID.
+
+Example: PUT /api/users/1 --> Updates user with ID 1.
+
+Status Code: 200 OK or 201 if created
+
+In My Project: Not used yet, but can be used to update user info.
